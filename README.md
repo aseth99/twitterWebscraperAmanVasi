@@ -4,7 +4,7 @@ How to Gather Tweets into An Excel Sheet: An Introduction
 STEPS:
 
 1.
-get a twitter developer account (developer.twitter.com), then export your keys/token into the environment (terminal)
+-get a twitter developer account (developer.twitter.com), then export your keys/token into the environment (terminal)
 export API_KEY=[redacted]
 export API_SECRET_KEY=[redacted]
 export ACCESS_TOKEN=[redacted]
