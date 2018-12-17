@@ -1,4 +1,4 @@
-import pymongo
+import json
 from pymongo import MongoClient
 
 
@@ -17,11 +17,31 @@ tweet3 = {"created_at": "Wed Nov 28 03:35:26 +0000 2018", "text": "@revRecluse B
 new_result = posts.insert_many([tweet1, tweet2, tweet3])
 
 
-print('One post: {0}'.format(result.inserted_id))
+# print('One post: {0}'.format(result.inserted_id))
 
-print('Multiple posts: {0}'.format(new_result.inserted_ids))
+# print('Multiple posts: {0}'.format(new_result.inserted_ids))
 
-lowetides_post = posts.find_one({'name': 'Lowetide'})
+
+# 
+
+
+oilersTweets = db.tweets
+
+# for line in open('user_timeline_Lowetide.json', 'r'):
+#         oilersTweets.insert(json.loads(line))
+# for line in open('user_timeline_OilersNation.json', 'r'):
+#         oilersTweets.insert(json.loads(line))
+# for line in open('user_timeline_JasonGregor.json', 'r'):
+#         oilersTweets.insert(json.loads(line))
+# for line in open('user_timeline_Robin_Brownlee.json', 'r'):
+#         oilersTweets.insert(json.loads(line))
+# for line in open('user_timeline_SportsnetSpec.json', 'r'):
+#         oilersTweets.insert(json.loads(line))
+# for line in open('user_timeline_dstaples.json', 'r'):
+#         oilersTweets.insert(json.loads(line))
+
+lowetides_post = oilersTweets.find({})
 print(lowetides_post)
 
 
+client.close()

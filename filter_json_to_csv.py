@@ -19,7 +19,7 @@ tweets = []
 filterArray = []
 
 exitClause = "notdone"
-print("what words do we want to filter by? (already filtering by resilien,adversity,disaster or terrorist)\n\n\n")
+print("what words do we want to filter by? \n\n\n")
 
 while exitClause != "done":
     exitClause = input("(type done if finished)\n\n")
