@@ -1,2 +1,4 @@
 gitignore
 app-env
+*.json
+old useless/
